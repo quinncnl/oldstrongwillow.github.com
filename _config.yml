@@ -1,0 +1,18 @@
+title:            云淡风轻
+description:      A jekyll theme. Because I scribble.
+url:             http://www.cleartsai.com 
+signoff:         Strongwillow 
+disqus_shortname: #cleartsai
+paginate: 5
+
+links:
+  - name:         About
+    url:          /about
+  - name:         GitHub
+    url:          http://github.com/strongwillow
+    external:     true
+pygments:      	  true 
+permalink:        pretty
+markdown:         rdiscount
+rdiscount:
+  extensions:     [smart]
