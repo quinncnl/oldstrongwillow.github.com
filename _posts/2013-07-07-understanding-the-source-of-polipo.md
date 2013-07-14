@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Understanding the Source of Polipo (Not Completed)
 ---
 
 ## Overview
@@ -16,7 +15,38 @@ Polipo use the effective IO multiplexing *poll* to listen on IO events. Accordin
 
 > Polipo will use HTTP/1.1 pipelining if it believes that the remote server supports it, whether the incoming requests are pipelined or come in simultaneously on multiple connections (this is more than the simple usage of persistent connections, which is done by e.g. Squid);
 
-For example, if broswer A is requesting http://xxx/abc, while broswer B is requesting http://xxx/xyz, Polipo have the ability to pipeline the requests and use only one connection to server xxx. In order to achieve this, Polipo introduces a delayed reading mechanism.
+For example, if broswer A is requesting http://xxx/abc, while broswer B is requesting http://xxx/xyz, Polipo will pipeline the requests and use only one connection to server xxx. The machanism is simple. *expireServersHandler* is just for that.
+
+{% highlight c linenos %}
+
+/**
+When a server has sent all response, keep it alive for a while in case another client requests the same server.
+*/
+
+static int
+expireServersHandler(TimeEventHandlerPtr event)
+{
+    HTTPServerPtr server, next;
+    TimeEventHandlerPtr e;
+    server = servers;
+    while(server) {
+        next = server->next;
+        if(httpServerIdle(server) &&
+           server->time + serverExpireTime < current_time.tv_sec)
+            discardServer(server);
+        server = next;
+    }
+    e = scheduleTimeEvent(serverExpireTime / 60 + 60, 
+                          expireServersHandler, 0, NULL);
+    if(!e) {
+        do_log(L_ERROR, "Couldn't schedule server expiry.\n");
+        polipoExit();
+    }
+    return 1;
+}
+
+{% endhighlight %}
+
 
 Time event handlers such as *expireServersHandler*, *httpTimeoutHandler*, *httpClientDelayed*, *dnsTimeoutHandler* are scheduled in a queue using
 
@@ -24,12 +54,11 @@ Time event handlers such as *expireServersHandler*, *httpTimeoutHandler*, *httpC
 > scheduleTimeEvent(int seconds,
 >                  int (*handler)(TimeEventHandlerPtr), int dsize, void *data)
 
-If no time events registered, then Polipo will be blocked polling for new requests from clients. If there is some time events in waiting in the queue, 
+If no time events registered, Polipo will be blocked polling for new requests from clients. If there is some time events waiting in the queue, then Polipo will check if any of the events timed out. As the following code snippet manifests.
 
 {% highlight c linenos %}
 
 // event.c eventLoop
-
 
 if(sleep_time.tv_sec == -1) {
   //if timeEventQueue has no items, poll for non-time events
@@ -62,3 +91,38 @@ if(sleep_time.tv_sec == -1) {
 }
 
 {% endhighlight %}
+
+## Connection
+
+First of all, let's see how Polipo defines HTTP connection.
+
+{% highlight c linenos %}
+
+typedef struct _HTTPConnection {
+    int flags;
+    int fd;
+    char *buf;
+    int len;
+    int offset;
+    HTTPRequestPtr request;
+    HTTPRequestPtr request_last;
+    int serviced;
+    int version;
+    int time;
+    TimeEventHandlerPtr timeout;
+    int te;
+    char *reqbuf;
+    int reqlen;
+    int reqbegin;
+    int reqoffset;
+    int bodylen;
+    int reqte;
+    /* For server connections */
+    int chunk_remaining;
+    struct _HTTPServer *server;
+    int pipelined;
+    int connecting;
+} HTTPConnectionRec, *HTTPConnectionPtr;
+{% endhighlight %}
+
+*Continuing*
