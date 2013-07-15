@@ -157,7 +157,11 @@ I can ask many questions about the connection. Below are some representative que
 #### How a request is received from a client?
 
 1. In *create_listener*, Polipo binds the port and set socket options. At last,
->    return schedule_accept(fd, handler, data);
+
+{% highlight c linenos %}
+
+return schedule_accept(fd, handler, data);
+{% endhighlight %}
 
 2. *schedule_accept* registers an accept callback. So when a client connects to Polipo, *do_scheduled_accept* is invoked and polipo will save the request to request queue.
 
@@ -195,12 +199,15 @@ do_scheduled_accept(int status, FdEventHandlerPtr event)
 
 3. Use *do_stream* to read the whole header, then call httpClientRequest, as we can see below.
 
-> #0  httpClientRequest (request=0x100106a00, url=0x100106f50) at client.c:725
-> #1  0x0000000100012d8c in httpClientHandlerHeaders (event=0x100106a00, srequest=0x100106f50, connection=<value temporarily unavailable, due to optimizations>) at client.c:673
-> #2  0x00000001000120dd in httpClientHandler (status=<value temporarily unavailable, due to optimizations>, event=0x100106f50, request=<value temporarily unavailable, due to optimizations>) at client.c:399
-> #3  0x000000010000351a in do_scheduled_stream (status=<value temporarily unavailable, due to optimizations>, event=0x100107930) at io.c:240
-> #4  0x0000000100002caf in eventLoop () at event.c:757
-> #5  0x000000010000cff6 in main (argc=<value temporarily unavailable, due to optimizations>, argv=<value temporarily unavailable, due to optimizations>) at main.c:165
+{% highlight c linenos %}
 
+#0  httpClientRequest (request=0x100106a00, url=0x100106f50) at client.c:725
+#1  0x0000000100012d8c in httpClientHandlerHeaders (event=0x100106a00, srequest=0x100106f50, connection=<value temporarily unavailable, due to optimizations>) at client.c:673
+#2  0x00000001000120dd in httpClientHandler (status=<value temporarily unavailable, due to optimizations>, event=0x100106f50, request=<value temporarily unavailable, due to optimizations>) at client.c:399
+#3  0x000000010000351a in do_scheduled_stream (status=<value temporarily unavailable, due to optimizations>, event=0x100107930) at io.c:240
+#4  0x0000000100002caf in eventLoop () at event.c:757
+#5  0x000000010000cff6 in main (argc=<value temporarily unavailable, due to optimizations>, argv=<value temporarily unavailable, due to optimizations>) at main.c:165
+
+{% endhighlight %}
 
 *Continuing*
