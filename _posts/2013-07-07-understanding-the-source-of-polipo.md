@@ -125,4 +125,82 @@ typedef struct _HTTPConnection {
 } HTTPConnectionRec, *HTTPConnectionPtr;
 {% endhighlight %}
 
+We can notice that HTTPConnection includes a pointer to HTTPRequest, and other connection related details. Let's see how Polipo defines a request.
+
+{% highlight c linenos %}
+typedef struct _HTTPRequest {
+    int flags;
+    struct _HTTPConnection *connection;
+    ObjectPtr object;
+    int method;
+    int from;
+    int to;
+    CacheControlRec cache_control;
+    HTTPConditionPtr condition;
+    AtomPtr via;
+    struct _ConditionHandler *chandler;
+    ObjectPtr can_mutate;
+    int error_code;
+    struct _Atom *error_message;
+    struct _Atom *error_headers;
+    AtomPtr headers;
+    struct timeval time0, time1;
+    struct _HTTPRequest *request;
+    struct _HTTPRequest *next;
+} HTTPRequestRec, *HTTPRequestPtr;
+{% endhighlight %}
+
+HTTPRequest is a linked list comprised of pipelined requests to a single server connection.
+
+I can ask many questions about the connection. Below are some representative questions.
+
+#### How a request is received from a client?
+
+1. In *create_listener*, Polipo binds the port and set socket options. At last,
+>    return schedule_accept(fd, handler, data);
+
+2. *schedule_accept* registers an accept callback. So when a client connects to Polipo, *do_scheduled_accept* is invoked and polipo will save the request to request queue.
+
+{% highlight c linenos %}
+  event = registerFdEvent(fd, POLLOUT|POLLIN, 
+                            do_scheduled_accept, sizeof(request), &request);
+
+{% endhighlight %}
+
+{% highlight c linenos %}
+int
+do_scheduled_accept(int status, FdEventHandlerPtr event)
+{
+    AcceptRequestPtr request = (AcceptRequestPtr)&event->data;
+    int rc, done;
+    unsigned len;
+    struct sockaddr_in addr;
+
+    if(status) {
+        done = request->handler(status, event, request);
+        if(done) return done;
+    }
+
+    len = sizeof(struct sockaddr_in);
+
+    rc = accept(request->fd, (struct sockaddr*)&addr, &len);
+
+    if(rc >= 0)
+        done = request->handler(rc, event, request);
+    else
+        done = request->handler(-errno, event, request);
+    return done;
+}
+{% endhighlight %}
+
+3. Use *do_stream* to read the whole header, then call httpClientRequest, as we can see below.
+
+> #0  httpClientRequest (request=0x100106a00, url=0x100106f50) at client.c:725
+> #1  0x0000000100012d8c in httpClientHandlerHeaders (event=0x100106a00, srequest=0x100106f50, connection=<value temporarily unavailable, due to optimizations>) at client.c:673
+> #2  0x00000001000120dd in httpClientHandler (status=<value temporarily unavailable, due to optimizations>, event=0x100106f50, request=<value temporarily unavailable, due to optimizations>) at client.c:399
+> #3  0x000000010000351a in do_scheduled_stream (status=<value temporarily unavailable, due to optimizations>, event=0x100107930) at io.c:240
+> #4  0x0000000100002caf in eventLoop () at event.c:757
+> #5  0x000000010000cff6 in main (argc=<value temporarily unavailable, due to optimizations>, argv=<value temporarily unavailable, due to optimizations>) at main.c:165
+
+
 *Continuing*
