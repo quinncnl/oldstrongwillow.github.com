@@ -61,7 +61,7 @@ If no time events registered, Polipo will be blocked polling for new requests fr
 // event.c eventLoop
 
 if(sleep_time.tv_sec == -1) {
-  //if timeEventQueue has no items, poll for non-time events
+  //if timeEventQueue has no items(no timeouts), poll for requests
     rc = poll(poll_fds, fdEventNum, 
               diskIsClean ? -1 : idleTime * 1000);
 } else if(timeval_cmp(&sleep_time, &current_time) <= 0) {
@@ -74,16 +74,17 @@ if(sleep_time.tv_sec == -1) {
   //refresh current time
     gettimeofday(&current_time, NULL);
     if(timeval_cmp(&sleep_time, &current_time) <= 0) {
-	  //refreshed and find timeout
+	  //refreshed current_time and find timeout time
         runTimeEventQueue();
         continue;
     } else {
-	  //still sleeping
+	  //still not timing out
         int t;
         timeval_minus(&timeout, &sleep_time, &current_time);
         t = timeout.tv_sec * 1000 + (timeout.tv_usec + 999) / 1000;
 
-		//blocking here for requests
+		// blocking here for requests
+		// what if an event times out here? poll also has timeout
 		printf("blocking here\n");
         rc = poll(poll_fds, fdEventNum,
                   diskIsClean ? t : MIN(idleTime * 1000, t));
@@ -97,7 +98,9 @@ if(sleep_time.tv_sec == -1) {
 First of all, let's see how Polipo defines HTTP connection.
 
 {% highlight c linenos %}
-
+/**
+Connection to server, pipelined requests in a queue.
+*/
 typedef struct _HTTPConnection {
     int flags;
     int fd;
@@ -154,7 +157,7 @@ HTTPRequest is a linked list comprised of pipelined requests to a single server 
 
 I can ask many questions about the connection. Below are some representative questions.
 
-#### How a request is received from a client?
+#### How is a request received from a client?
 
 *  In *create_listener*, Polipo binds the port and set socket options. At last,
 
@@ -199,15 +202,59 @@ do_scheduled_accept(int status, FdEventHandlerPtr event)
 
 * Use *do_stream* to read the whole header, then call httpClientRequest, as we can see below.
 
-{% highlight bash %}
-
+<pre>
 #0  httpClientRequest (request=0x100106a00, url=0x100106f50) at client.c:725
 #1  0x0000000100012d8c in httpClientHandlerHeaders (event=0x100106a00, srequest=0x100106f50, connection=<value temporarily unavailable, due to optimizations>) at client.c:673
 #2  0x00000001000120dd in httpClientHandler (status=<value temporarily unavailable, due to optimizations>, event=0x100106f50, request=<value temporarily unavailable, due to optimizations>) at client.c:399
 #3  0x000000010000351a in do_scheduled_stream (status=<value temporarily unavailable, due to optimizations>, event=0x100107930) at io.c:240
 #4  0x0000000100002caf in eventLoop () at event.c:757
-#5  0x000000010000cff6 in main (argc=<value temporarily unavailable, due to optimizations>, argv=<value temporarily unavailable, due to optimizations>) at main.c:165
+#5  0x000000010000cff6 in main (argc=<value temporarily unavailable, due to optimizations>, argv=<value temporarily unavaible, due to optimizations>) at main.c:165
+</pre>
 
+#### How is the data sent to server?
+
+*do_scheduled_stream* is the function (the only one) that invoked read/write system call.
+
+*do_stream_h* stream header.
+
+Let's compare *do_stream*, which can be seen as a proxy of *schedule_stream*.
+
+{% highlight c linenos %}
+FdEventHandlerPtr
+do_stream(int operation, int fd, int offset,
+  char *buf, int len,
+  int (*handler)(int, FdEventHandlerPtr, StreamRequestPtr),
+  void *data);
+
+// Stream header to client
+FdEventHandlerPtr
+do_stream_h(int operation, int fd, int offset, 
+  char *header, int hlen, char *buf, int len,
+  int (*handler)(int, FdEventHandlerPtr, StreamRequestPtr),
+  void *data);
+
+FdEventHandlerPtr
+do_stream_2(int operation, int fd, int offset, 
+  char *buf, int len, char *buf2, int len2,
+  int (*handler)(int, FdEventHandlerPtr, StreamRequestPtr),
+  void *data);
+
+FdEventHandlerPtr
+do_stream_3(int operation, int fd, int offset, 
+  char *buf, int len, char *buf2, int len2, char *buf3, int len3,
+  int (*handler)(int, FdEventHandlerPtr, StreamRequestPtr),
+  void *data);
+
+FdEventHandlerPtr
+do_stream_buf(int operation, int fd, int offset,
+  char **buf_location, int len,
+  int (*handler)(int, FdEventHandlerPtr, StreamRequestPtr),
+  void *data);
 {% endhighlight %}
+
+#### How chunked data is processed?
+
+## Buffer
+
 
 *Continuing*
