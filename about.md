@@ -3,9 +3,7 @@ layout: page
 title: About
 ---
 
+This is ClearTsai. I share some of my ideas and work here.
+
 > Success never depends on sheer luck.
 
-**兴趣方向**
-
-+ 计算机安全
-+ 分布式系统

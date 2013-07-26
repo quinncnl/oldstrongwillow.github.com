@@ -1,4 +1,4 @@
-title:            云淡风轻
+title:            蔡蔡不菜 
 description:      A jekyll theme. Because I scribble.
 url:             http://www.cleartsai.com 
 signoff:         Strongwillow 
@@ -11,6 +11,13 @@ links:
   - name:         GitHub
     url:          http://github.com/strongwillow
     external:     true
+  - name:         Instagram
+    url:          http://instagram.com/strongwillow
+    external:     true
+  - name:         GitHub
+    url:          https://delicious.com/strongwillow
+    external:     true
+
 pygments:      	  true 
 permalink:        pretty
 markdown:         rdiscount
