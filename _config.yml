@@ -20,6 +20,6 @@ links:
 
 pygments:      	  true 
 permalink:        pretty
-markdown:         rdiscountn
+markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
