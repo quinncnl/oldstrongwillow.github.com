@@ -14,12 +14,12 @@ links:
   - name:         Instagram
     url:          http://instagram.com/strongwillow
     external:     true
-  - name:         GitHub
+  - name:         Delicious
     url:          https://delicious.com/strongwillow
     external:     true
 
 pygments:      	  true 
 permalink:        pretty
-markdown:         rdiscount
+markdown:         rdiscountn
 rdiscount:
   extensions:     [smart]

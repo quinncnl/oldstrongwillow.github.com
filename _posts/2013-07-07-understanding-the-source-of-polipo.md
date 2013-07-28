@@ -99,7 +99,7 @@ First of all, let's see how Polipo defines HTTP connection.
 
 {% highlight c linenos %}
 /**
-Connection to server, pipelined requests in a queue.
+Connection to server, multiple requests in a queue.
 */
 typedef struct _HTTPConnection {
     int flags;
@@ -153,9 +153,9 @@ typedef struct _HTTPRequest {
 } HTTPRequestRec, *HTTPRequestPtr;
 {% endhighlight %}
 
-HTTPRequest is a linked list comprised of pipelined requests to a single server connection.
+HTTPRequest is a linked list comprised of multiple requests sent via a single server connection.
 
-I can ask many questions about the connection. Below are some representative questions.
+We can ask many questions about the connection. Below are some representative questions.
 
 #### How is a request received from a client?
 
@@ -252,9 +252,13 @@ do_stream_buf(int operation, int fd, int offset,
   void *data);
 {% endhighlight %}
 
-#### How chunked data is processed?
+#### How is chunked encoding processed?
+
+Chunked encoding is processed in *do_scheduled_stream*. It flushes the buffer once a full chunk is read.
+
 
 ## Buffer
+
 
 
 *Continuing*
