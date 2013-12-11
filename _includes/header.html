@@ -1,4 +1,8 @@
-<header>
-<a id="go-back-home" href="/"><img src="/images/scribble.png" alt="scribble" width="53" height="59"></a>
-<p>{{ site.title }}</p>
+<header class="site-header">
+  <a href="/" class="site-title square{% if page.url == '/' %} active{% endif %}">
+    /
+  </a>
+  <a href="/about" class="site-title square{% if page.url == '/about/' %} active{% endif %}">
+    About
+  </a>
 </header>

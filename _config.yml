@@ -1,27 +1,13 @@
-title:            蔡蔡不菜 
-description:      A jekyll theme. Because I scribble.
-url:              http://www.cleartsai.com 
-signoff:          Strongwillow 
-paginate: 5
-
-links:
-  - name:         About
-    url:          /about
-  - name:         GitHub
-    url:          http://github.com/strongwillow
-    external:     true
-  - name:         Instagram
-    url:          http://instagram.com/strongwillow
-    external:     true
-  - name:         Pinterest
-    url:          http://pinterest.com/strongwillow/
-    external:     true
-  - name:         Delicious
-    url:          https://delicious.com/strongwillow
-    external:     true
-
-pygments:      	  true 
+title:            蔡蔡不菜 - @strongwillow
+url:              http://www.cleartsai.com
 permalink:        pretty
+pygments:         true
 markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
+google_analytics: 
+timezone:         Europe/London
+paginate: 5
+links: 
+  - name:         About
+    url:          /about
