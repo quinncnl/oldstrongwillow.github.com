@@ -1,4 +1,4 @@
 git add .
 git commit -am "sync blog"
-git push
+git push origin master
 
