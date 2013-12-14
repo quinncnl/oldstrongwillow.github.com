@@ -2,6 +2,7 @@
 layout: post
 title: 写一封情书送给我自己
 date: Sat Dec 14 16:18:47 GMT+8 2013
+excerpt: Hello word.jskdjflsdkjf.sdfjksdlfjsd.
 
 ---
 
