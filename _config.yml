@@ -6,7 +6,7 @@ markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
 google_analytics: 
-timezone:         Europe/London
+timezone:         GMT+8
 paginate: 5
 links: 
   - name:         About
