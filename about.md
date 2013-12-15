@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: about
 
-title: <img src="http://tp1.sinaimg.cn/1697640652/180/5681995195/1" class="avatar" />About
+title: <img src="http://tp1.sinaimg.cn/1697640652/180/5681995195/1" class="avatar" />about
 ---
 
-**Craig Tsai** <small>(**蔡清**)</small>. <br />
+**Clear Tsai** <small>(**蔡清**)</small>. <br />
 
 An graduate student majored in embedded system. Currently living in Shanghai.
 
