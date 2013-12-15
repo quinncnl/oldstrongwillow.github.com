@@ -6,7 +6,7 @@ title: <img src="http://tp1.sinaimg.cn/1697640652/180/5681995195/1" class="avata
 
 **Clear Tsai** <small>(**蔡清**)</small>. <br />
 
-An graduate student majored in embedded system. Currently living in Shanghai.
+A graduate student majored in embedded system. Currently living in Shanghai.
 
 <br />
 Tsai
