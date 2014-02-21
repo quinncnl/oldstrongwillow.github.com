@@ -2,6 +2,8 @@
 layout: post
 title: Old Pi, New Blood
 date: 2013-06-22 20:27:31
+published: false
+
 ---
 
 I used to use Raspbian on my Raspberry Pi, which is good for newbies. However, Debian/Raspbian is still too heavy from my perspective. I ended up choosing the archlinux because of its thin architecture and that they claimed it can boot in less than 10 seconds.

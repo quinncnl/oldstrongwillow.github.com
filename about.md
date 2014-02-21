@@ -6,12 +6,13 @@ title: <img src="http://tp1.sinaimg.cn/1697640652/180/5681995195/1" class="avata
 
 **Clear Tsai** <small>(**蔡清**)</small>. <br />
 
-A graduate student majored in embedded system. Currently living in Shanghai.
+A graduate student majored in embedded system and software engineering. Currently living in Rouen, France.
 
 <br />
 Tsai
 
-* is interested in Raspberry Pi
+* believe in true love
+* plays Raspberry Pi
 * takes photographs
 * loves bicycles
 * is an active forex trader
