@@ -6,7 +6,7 @@ title: <img src="http://tp1.sinaimg.cn/1697640652/180/5681995195/1" class="avata
 
 **Clear Tsai** <small>(**蔡清**)</small>. <br />
 
-A graduate student majored in embedded system and software engineering. Currently living in Rouen, France.
+A graduate student majored in embedded system and computer science. Currently living in Rouen, France.
 
 <br />
 Tsai
