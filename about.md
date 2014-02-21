@@ -9,9 +9,9 @@ title: <img src="http://tp1.sinaimg.cn/1697640652/180/5681995195/1" class="avata
 A graduate student majored in embedded system and computer science. Currently living in Rouen, France.
 
 <br />
-Tsai
+**Tsai**
 
-* believe in true love
+* believes in true love
 * plays Raspberry Pi
 * takes photographs
 * loves bicycles
