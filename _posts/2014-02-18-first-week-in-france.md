@@ -13,7 +13,7 @@ title: 在法国的第一周
 
 住处离塞纳河只有几分钟的路程，傍晚有时间的话通常会去慢跑。右岸有很多运动的人，除了慢跑者，还有溜冰和滑板的年青人。在傍晚落日的余辉下，又是一幅生动的图画！
 
-这周申请了银行卡，可能要下周才能收到。电话卡要在有了银行卡后才能办理。
+ESIG 的中国校友很多，他们都很热情友好。周末我们还在一起聚餐，品尝大家的手艺。元宵情人节那天我们还和学弟学妹一起吃了元宵。
 
 <iframe src="//instagram.com/p/kWeWuBpJKb/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
