@@ -11,10 +11,11 @@ A graduate student majored in embedded system and computer science. Currently li
 <br />
 **Tsai**
 
-* believes in true love
+* is a full stack web develper
 * plays Raspberry Pi
 * takes photographs
-* loves bicycles
+* loves bicycling and jogging
 * is an active forex trader
 
 <br />
+clear.tsai(*)gmail.com
