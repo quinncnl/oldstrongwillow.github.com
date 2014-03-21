@@ -9,5 +9,7 @@ google_analytics:
 timezone:         GMT+1
 paginate: 5
 links: 
+  - name:         Forex
+    url:          /forex
   - name:         About
     url:          /about
