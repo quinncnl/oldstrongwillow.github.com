@@ -1,14 +1,37 @@
 ---
 layout: post
-title: Willowyard Trading Strategy
+title: Willowyard Strategy
 ---
 
-I started a new trading strategy on 03/13/2014.
+I started a new strategy on 03/13/2014.
 
-This strategy uses short stop-loss and large take-profit. It is manual, trend following and based on fundamentals. My goal is to double it in six month.
+Characteristics
+=======
 
-Trading elements include forex, gold and Indices, but mainly gold and Indices.
+* Short stop-loss and large take-profit. 
+* Trend following and based on fundamentals.
+* Stop all trades before big events, usually NFP.
+* Stop trades if fundermentals have changed.
+* Trading elements include forex, gold and indices.
+
+Goals
+=======
+
+* Double the equity in six months.
+* Maintain the max DD by equity below 5%.
+
+Detailed Stats
+=======
 
 <a href="http://www.myfxbook.com/members/cylfx/Willowyard/866193"><img  border="0" width="430" height="215" src="http://widgets.myfxbook.com/widgets/866193/large.jpg"/></a>
 
-If you have any questions, feel free to leave a comment.
+Subscribe as a signal:
+
+[http://www.mql5.com/en/signals/34347](http://www.mql5.com/en/signals/34347)
+
+Updates
+=======
+
+#### 3, avr, 2014
+Tomorrow NFP. Closed NSDQ-JUN14 & FTSE-JUN14. Still very bullish though.
+
