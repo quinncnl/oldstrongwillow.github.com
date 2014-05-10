@@ -3,6 +3,6 @@ layout: post
 title: Running Stats
 ---
 
-<iframe src="https://mapsengine.google.com/map/embed?mid=zdgmwJGEpWug.khCwXeHMCtBY" width="670" height="660"></iframe>
+<iframe src="https://mapsengine.google.com/map/embed?mid=zdgmwJGEpWug.khCwXeHMCtBY" width="100%" height="660"></iframe>
 
 
