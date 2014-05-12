@@ -23,7 +23,7 @@ Z 的女友 L 在荷兰的 Wageningen 读书，我们在荷兰的大本营就设
 
 下面是做的一个小短片。本来没打算做的，所以视频都没怎么拍我们的人，感觉少了点趣味！
 
-<iframe src="//player.vimeo.com/video/94389071" width="660" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/94389071">Kukenhof</a> from <a href="http://vimeo.com/user16215709">Craig Tsai</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="//player.vimeo.com/video/94389071" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/94389071">Kukenhof</a> from <a href="http://vimeo.com/user16215709">Craig Tsai</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 视频开始的那个是一个全自动的音乐机，乐谱就是那一本一本的书，非常奇特的设计。
 
@@ -31,7 +31,7 @@ Z 的女友 L 在荷兰的 Wageningen 读书，我们在荷兰的大本营就设
 
 长枪短炮蹲趴站躺一阵狂拍的人也不少，好看的花前面往往蹲着好几个人各种角度各种拍，题目很明确就是『她在花中笑』。
 
-<iframe src="//instagram.com/p/nBrSdsJJFD/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+<iframe src="//instagram.com/p/nBrSdsJJFD/embed/" width="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 ## 阿姆斯特丹
 
@@ -53,6 +53,6 @@ Z 的女友 L 在荷兰的 Wageningen 读书，我们在荷兰的大本营就设
 
 天色暗下来后我们去了熙攘的红灯区。橱窗 Girl 衣着三点装，不停搔首弄姿，其中还有一个身材特好的向我招手，估计是想说给我优惠吧哈哈。。
 
-<iframe src="//instagram.com/p/nBrGOIpJEe/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+<iframe src="//instagram.com/p/nBrGOIpJEe/embed/" width="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 OK，第一天的行程就是这样啦！
