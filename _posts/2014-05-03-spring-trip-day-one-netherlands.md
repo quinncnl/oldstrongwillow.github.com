@@ -23,7 +23,7 @@ Z 的女友 L 在荷兰的 Wageningen 读书，我们在荷兰的大本营就设
 
 下面是做的一个小短片。本来没打算做的，所以视频都没怎么拍我们的人，感觉少了点趣味！
 
-<iframe src="//player.vimeo.com/video/94389071" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/94389071">Kukenhof</a> from <a href="http://vimeo.com/user16215709">Craig Tsai</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="//player.vimeo.com/video/94389071" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/94389071">Kukenhof</a> from <a href="http://vimeo.com/user16215709">Craig Tsai</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 视频开始的那个是一个全自动的音乐机，乐谱就是那一本一本的书，非常奇特的设计。
 
@@ -31,17 +31,17 @@ Z 的女友 L 在荷兰的 Wageningen 读书，我们在荷兰的大本营就设
 
 长枪短炮蹲趴站躺一阵狂拍的人也不少，好看的花前面往往蹲着好几个人各种角度各种拍，题目很明确就是『她在花中笑』。
 
-<iframe src="//instagram.com/p/nBrSdsJJFD/embed/" width="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+<iframe src="//instagram.com/p/nBrSdsJJFD/embed/" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 ## 阿姆斯特丹
 
 下午我们去了阿姆斯特丹。
 
-提起阿姆，大家会想到红灯区，大麻面包，还有满城的运河。之于大麻面包，之前有筒子是这么形容的：
+提起阿姆，大家会想到红灯区，大麻面包，还有满城的运河。之于大麻面包，之前有童鞋是这么形容的：
 
 > 这面包可不得了，上面白纸黑字注明了含大麻3克、60-90分钟后起效、持续3-4小时、18岁以下禁止服用、不能吃多于一片，还禁止出口！是不是觉得很牛X，听上去已经觉得会high得不得了呢？蛤蛤，你们图样图森破啦！我之前还真以为是那么回事，结果现在吃完3小时，连半点感觉都没有，简直深深的感到被骗啦，有木有😂卖5欧的一片薄薄的面包啊，说好的high呢？！😱
 
-我吃了没感到什么异样，L 倒是觉得有点怪味，不过也没见她有什么异常举动。本来还想着吃掉后会神魂颠倒呢，大失所望啊！
+我吃了没感到什么异样，J 倒是觉得有点怪味，不过也没见她有什么异常举动。本来还想着看她吃掉后神魂颠倒呢，大失所望啊！
 
 在国立博物馆和梵高美术馆中，我们选择了更有特色的梵高美术馆。
 
@@ -53,6 +53,6 @@ Z 的女友 L 在荷兰的 Wageningen 读书，我们在荷兰的大本营就设
 
 天色暗下来后我们去了熙攘的红灯区。橱窗 Girl 衣着三点装，不停搔首弄姿，其中还有一个身材特好的向我招手，估计是想说给我优惠吧哈哈。。
 
-<iframe src="//instagram.com/p/nBrGOIpJEe/embed/" width="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+<iframe src="//instagram.com/p/nBrGOIpJEe/embed/" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 OK，第一天的行程就是这样啦！
