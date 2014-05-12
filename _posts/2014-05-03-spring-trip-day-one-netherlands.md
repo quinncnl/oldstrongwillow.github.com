@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spring Trip DAY 1 - Netherlands
+cover: http://lifeinastateofwanderlust.files.wordpress.com/2013/04/tulip-fields.jpg?w=584&h=342
 ---
 
 法国的学校从复活节开始会放十几天的春假。春假期间，大家通常会背起行囊去其他地方旅行。这次我们就去了荷兰、捷克、奥地利和德国，总共花了10多天时间。我们包括孩子似的 C，女神似的 J，还有淘气的 Z。

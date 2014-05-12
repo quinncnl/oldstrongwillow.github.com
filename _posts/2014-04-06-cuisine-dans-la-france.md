@@ -32,13 +32,13 @@ title: 吃在法国
 
 在这边的三餐主要还是自己做。目前根据菜谱和自己的尝试，已经可以做出不错的饭菜了！
 
-这是一道葱花奶酪饼。大概要30分钟时间。
+来法国做的第一餐饭。
 
-![](/images/2014/IMG_0651.jpg)
+<iframe src="//instagram.com/p/kWeWuBpJKb/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 土豆牛腩。前不久新学的一道菜，经过几次实验，目前快要成为我的第一个拿手菜啦！下面的面食叫蝴蝶粉 *farfalle*，约等于国内的面条，是这边常见的面食之一。是不是像极了艺术品？
 
-![](/images/2014/IMG_0617.jpg)
+<iframe src="//instagram.com/p/m3J2gmJJBc/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 要问留学生出国后最大的改变是什么，很多人大约会说是厨艺。原因有很多，其中一方面就是做菜确实很有意思，能够把一堆普普通通的原材料变成秀色可口的美食是一件很奇妙的事。更何况还要填到自己肚子里的呢？
 

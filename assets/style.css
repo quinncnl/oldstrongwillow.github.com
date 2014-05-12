@@ -110,7 +110,8 @@ hr {
       font-size: 10px;
       line-height: 1.3em; }
     .posts .post-link .excerpt {
-      display: none; }
+      padding: 20px 40px 30px 40px;
+     }
 
 .avatar {
   border-radius: 200px;

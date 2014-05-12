@@ -3,16 +3,16 @@ layout: post
 title: Willowyard Strategy
 ---
 
-I started a new strategy on 03/13/2014.
+I started this strategy on 03/13/2014.
 
 Characteristics
 =======
 
 * Short stop-loss and large take-profit. 
 * Trend following and based on fundamentals.
-* Stop all trades before big events, usually NFP.
-* Stop trades if fundermentals have changed.
-* Trading elements include forex, gold and indices.
+* Stop all trades before big events, usually NFP, ECB/FED meetings, etc.
+* Trading instruments include forex, gold and indices.
+* Has price-based stop and time-based stop.
 
 Goals
 =======
