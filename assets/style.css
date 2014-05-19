@@ -11,6 +11,12 @@ a {
 b, strong, h1, h2, h3, h4, h5 {
   font-weight: 500; }
 
+iframe {
+    margin: 10px auto 10px auto;
+    width: 95%;
+    height: 95%;
+}
+
 hr {
   border: 0;
   border-bottom: 1px solid #ddd;
