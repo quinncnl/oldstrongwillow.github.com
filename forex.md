@@ -13,6 +13,7 @@ Characteristics
 * Stop all trades before big events, usually NFP, ECB/FED meetings, etc.
 * Trading instruments include forex, gold and indices.
 * Has price-based stop and time-based stop.
+* Evolving. The stragegy changes from time to time.
 
 Goals
 =======
