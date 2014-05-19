@@ -29,9 +29,9 @@ Subscribe as a signal:
 
 [http://www.mql5.com/en/signals/34347](http://www.mql5.com/en/signals/34347)
 
-Updates
+Tweets
 =======
 
-#### 3, avr, 2014
-Tomorrow NFP. Closed NSDQ-JUN14 & FTSE-JUN14. Still very bullish though.
+<a class="twitter-timeline" href="https://twitter.com/willowyard" data-widget-id="468522361235312641">Tweets de @willowyard</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
