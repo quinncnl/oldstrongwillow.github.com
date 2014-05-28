@@ -5,17 +5,19 @@ cover: http://detoursdumonde.files.wordpress.com/2013/03/rotterdam.jpg
 
 ---
 
-早上起来去跑步，Wageningen 是个很年轻的小城市，人口很少且以学生为主。道路两旁都是葱翠的林木，无论是跑步，骑车还是驾车都很舒适。
+这一天我们的安排是在鹿特丹，晚上飞往布拉格。也就是说这是在荷兰的最后一天了。Z 陪女朋友去学校，晚上再到鹿特丹会合。
+
+## 在 Wageningen 的跑步
+
+早上起来先去跑步，Wageningen 是个很年轻的小城市，人口很少且以学生为主。道路两旁都是葱翠的林木，无论是跑步，骑车还是驾车都很舒适。
 
 <iframe src="//instagram.com/p/oiuMsWJJMs/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
-跑步时通常会优先选择景色好或者车少的路，这样会看到许多意想不到的景色。例如，
+跑步时，通常会优先选择景色好或者车少的路，这样会看到许多意想不到的景色。例如，
 
 <iframe src="//instagram.com/p/oit5FUJJMP/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 竟然发现了一个小农场！小牛和奶牛妈妈看着我的样子真有趣！
-
-这一天我们的安排是在鹿特丹，晚上飞往布拉格。也就是说这是在荷兰的最后一天了。Z 陪女朋友去学校，晚上再到鹿特丹会合。
 
 ## 鹿特丹
 
