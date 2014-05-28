@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spring Trip DAY 3 - Rotterdam
+cover: http://detoursdumonde.files.wordpress.com/2013/03/rotterdam.jpg
 
 ---
 
